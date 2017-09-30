@@ -1,0 +1,1 @@
+<b><?php _e('Sorry, nothing found :(', 'bootstrap4'); ?></b>
