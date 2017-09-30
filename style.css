@@ -1,11 +1,161 @@
-/*
-Theme Name: Promon
-Author: Mondo IT
-Author URI: https://mondoit.de/
-Description: Starter theme.
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: promon
+/**
+ * Theme Name:       Bootstrap 4 Theme
+ * Theme URI:        https://jlelse.eu/
+ * Version:          19
+ * Description:      Wordpress Theme, which uses Bootstrap 4 Alpha 5
+ * Author:           Jan-Lukas Else
+ * GitHub Theme URI: https://github.com/jlelse/bootstrap4
+ * GitHub Branch:    master
+ */
 
+/*
+* Globals
 */
+
+@media (min-width: 48em) {
+    .blog html {
+        font-size: 18px;
+    }
+}
+
+.blog body {
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+}
+
+.blog h1, .h1,
+.blog h2, .h2,
+.blog h3, .h3,
+.blog h4, .h4,
+.blog h5, .h5,
+.blog h6, .h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    color: #333;
+}
+
+/*
+* Override Bootstrap's default container.
+*/
+
+.container {
+    max-width: 60rem;
+}
+
+/*
+* Blog name and description
+*/
+
+.blog-header {
+    padding-bottom: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: .05rem solid #eee;
+}
+
+.blog-title {
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.blog-title a {
+    text-decoration: none !important;
+    color: #333;
+}
+
+.blog-description {
+    font-size: 1.1rem;
+    color: #999;
+}
+
+.blog-category-title {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+/* All pics max 100% */
+.blog img {
+    max-width: 100%;
+}
+
+@media (min-width: 40em) {
+    .blog-title {
+        font-size: 3.5rem;
+    }
+}
+
+/*
+* Main column and sidebar layout
+*/
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+    padding: 1.5rem;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+}
+
+/* Pagination */
+.blog-pagination {
+    margin-bottom: 4rem;
+}
+
+.blog-pagination > .btn {
+    border-radius: 2rem;
+}
+
+/*
+* Blog posts
+*/
+
+.blog-post {
+    margin-bottom: 4rem;
+}
+
+.blog-post-title {
+    margin-bottom: .25rem;
+    font-size: 2.5rem;
+}
+
+.blog-post-meta {
+    margin-bottom: 1.25rem;
+    color: #999;
+}
+
+/*
+* Footer
+*/
+
+.blog-footer {
+    padding: 2.5rem 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
+}
+
+.blog-footer p:last-child {
+    margin-bottom: 0;
+}
+
+/*
+* Blockquote
+*/
+
+blockquote {
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-left: .25rem solid #eceeef;
+}
+
+/*
+* Tags
+*/
+
+.tag a {
+    text-decoration: none !important;
+    color: white;
+}

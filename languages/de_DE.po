@@ -1,0 +1,93 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2016-12-03 21:40+0100\n"
+"PO-Revision-Date: 2016-12-03 21:41+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: comments.php:3
+msgid "The comments aren't enabled."
+msgstr "Die Kommentare sind deaktiviert."
+
+#: content-page.php:5 content-single.php:6
+msgid "Tags"
+msgstr "Schlagwörter"
+
+#: content.php:3
+msgid "by"
+msgstr "von"
+
+#: features/wp_bootstrap_pagination.php:12
+msgid "Newer"
+msgstr "Neuer"
+
+#: features/wp_bootstrap_pagination.php:13
+msgid "Older"
+msgstr "Älter"
+
+#: footer.php:4
+msgid "Back to top"
+msgstr "Zurück nach oben"
+
+#: functions.php:30
+msgid "Primary Menu"
+msgstr "Hauptmenü"
+
+#: functions.php:79
+msgid "minute"
+msgstr "Minute"
+
+#: functions.php:79
+msgid "minutes"
+msgstr "Minuten"
+
+#: functions.php:79 functions.php:81
+msgid "second"
+msgstr "Sekunde"
+
+#: functions.php:79 functions.php:81
+msgid "seconds"
+msgstr "Sekunden"
+
+#: functions.php:83
+msgid "Reading time"
+msgstr "Lesezeit"
+
+#: functions.php:88
+#, php-format
+msgid "%s ago"
+msgstr "Vor %s"
+
+#: functions.php:98
+msgid "Theme Settings"
+msgstr "Theme-Einstellungen"
+
+#: functions.php:105
+msgid "Disqus ID"
+msgstr "Disqus-ID"
+
+#: partials/nothingfound.php:1
+msgid "Sorry, nothing found :("
+msgstr "Entschuldigung, nichts gefunden :("
+
+#: searchform.php:3
+msgid "Search for"
+msgstr "Suche nach"
+
+#: searchform.php:7
+msgid "Search"
+msgstr "Suche"
+
+#: widgets/recent_posts.php:8
+msgid "Recent Posts"
+msgstr "Neueste Posts"
