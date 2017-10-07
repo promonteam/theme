@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html class="no-js"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,25 +27,6 @@
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,600,400italic,700' rel='stylesheet' type='text/css'>
 
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/animate.css' ?>">
-    <!-- Flexslider -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/flexslider.css' ?>">
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/icomoon.css' ?>">
-    <!-- Magnific Popup -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/magnific-popup.css' ?>">
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/bootstrap.min.css' ?>">
-
-    <!--
-    Default Theme Style
-    You can change the style.css (default color purple) to one of these styles
-
-
-
-    -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/style.css' ?>">
 
     <!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
 
