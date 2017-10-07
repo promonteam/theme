@@ -26,21 +26,30 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,600,400italic,700' rel='stylesheet' type='text/css'>
-
-
     <!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
-
     <!-- End demo purposes only -->
+    <!-- Animate.css -->
+     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/animate.css' ?>">
+     <!-- Flexslider -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/flexslider.css' ?>">
+    <!-- Icomoon Icon Fonts-->
+     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/icomoon.css' ?>">
+     <!-- Magnific Popup -->
+     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/magnific-popup.css' ?>">
+     <!-- Bootstrap  -->
+     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/bootstrap.min.css' ?>">
 
-
+     <!--
+     Default Theme Style
+     You can change the style.css (default color purple) to one of these styles
+    -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/style.css' ?>">
     <style>
-
     </style>
     <!-- End demo purposes only -->
 
-
     <!-- Modernizr JS -->
-    <script src="<?php echo get_template_directory_uri() ?>"/js/modernizr-2.6.2.min.js"></script>
+    <script src="<?php echo get_template_directory_uri() ?>/js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
     <script src="<?php echo get_template_directory_uri() ?>/js/respond.min.js"></script>
