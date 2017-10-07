@@ -29,21 +29,21 @@
     <!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
     <!-- End demo purposes only -->
     <!-- Animate.css -->
-     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/animate.css' ?>">
+     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/stylesheets/animate.css' ?>">
      <!-- Flexslider -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/flexslider.css' ?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/stylesheets/flexslider.css' ?>">
     <!-- Icomoon Icon Fonts-->
-     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/icomoon.css' ?>">
+     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/stylesheets/icomoon.css' ?>">
      <!-- Magnific Popup -->
-     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/magnific-popup.css' ?>">
+     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/stylesheets/magnific-popup.css' ?>">
      <!-- Bootstrap  -->
-     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/bootstrap.min.css' ?>">
+     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/stylesheets/bootstrap.min.css' ?>">
 
      <!--
      Default Theme Style
      You can change the style.css (default color purple) to one of these styles
     -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/style.css' ?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/stylesheets/style.css' ?>">
     <style>
     </style>
     <!-- End demo purposes only -->
