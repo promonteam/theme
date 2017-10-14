@@ -20,7 +20,7 @@ get_header(); ?>
                     <!--  lIJEVI MENI -->
                     <?php wp_nav_menu( array(
                        'theme_location' => 'header-menu',
-                      'menu_class' => "float-md-left left-menu " ) ); ?>
+                      'menu_class' => "pull-left left-menu " ) ); ?>
 
 
                       <!--  lOGO -->
@@ -39,15 +39,11 @@ get_header(); ?>
                       } else {
                               echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
                       }
-
-                    // array(
-                    //   'container_class' => 'fh5co-logo',
-                    //   )
                       ?>
 
                       <!--  DESNI MENI -->
                       <?php wp_nav_menu( array( 'theme_location' => 'user-menu',
-                      'menu_class' => 'float-md-right right-menu' ) ); ?>
+                      'menu_class' => 'pull-right right-menu' ) ); ?>
 
             </nav>
         </div>

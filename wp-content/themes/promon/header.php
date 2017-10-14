@@ -24,6 +24,8 @@
     <meta name="twitter:url" content="" />
     <meta name="twitter:card" content="" />
 
+
+
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -40,7 +42,8 @@
     <!-- Magnific Popup -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/stylesheets/magnific-popup.css' ?>">
     <!-- Bootstrap  -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/stylesheets/bootstrap.min.css' ?>">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Style sheet -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/stylesheets/style.css' ?>">
     <!-- Java script-->
