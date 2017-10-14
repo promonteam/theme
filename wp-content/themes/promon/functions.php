@@ -16,7 +16,9 @@ function register_my_menus() {
     array(
       'header-menu' => __( 'Header Menu' ),
       'extra-menu' => __( 'Extra Menu' ),
-      'user-menu' => __('User Menu')
+      'user-menu' => __('User Menu'),
+      'footer-company' => __('Company Menu'),
+      'footer-support' => __('Support Menu'),
     )
   );
 }

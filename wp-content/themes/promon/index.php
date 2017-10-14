@@ -335,26 +335,22 @@ get_header(); ?>
                 <div class="col-md-3 col-sm-6 col-xs-12 animate-box">
                     <div class="fh5co-footer-widget">
                         <h3>Company</h3>
-                        <ul class="fh5co-links">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Feature Tour</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Team</a></li>
-                        </ul>
+
+                          <?php wp_nav_menu( array(
+                             'theme_location' => 'footer-company',
+                             'menu_class' => 'fh5co-links',  ) ); ?>
+
                     </div>
                 </div>
 
                 <div class="col-md-3 col-sm-6 col-xs-12 animate-box">
                     <div class="fh5co-footer-widget">
                         <h3>Support</h3>
-                        <ul class="fh5co-links">
-                            <li><a href="#">Knowledge Base</a></li>
-                            <li><a href="#">24/7 Call Support</a></li>
-                            <li><a href="#">Video Demos</a></li>
-                            <li><a href="#">Terms of Use</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
+
+                              <?php wp_nav_menu( array(
+                              'theme_location' => 'footer-support',
+                              'menu_class' => 'fh5co-links',  ) ); ?>
+
                     </div>
                 </div>
 
