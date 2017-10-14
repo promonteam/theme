@@ -52,3 +52,45 @@
 
     <?php wp_head(); ?>
 </head>
+
+<body>
+
+<!-- Loader -->
+<div class="fh5co-loader"></div>
+
+<div id="fh5co-page">
+    <section id="fh5co-header">
+        <div class="container">
+            <nav role="navigation">
+                    <!--  lIJEVI MENI -->
+                    <?php wp_nav_menu( array(
+                       'theme_location' => 'header-menu',
+                      'menu_class' => "pull-left left-menu " ) ); ?>
+
+
+                      <!--  lOGO -->
+                      <?php   if ( function_exists( 'the_custom_logo' ) ) {
+                            //the_custom_logo();
+                        }
+
+                      $custom_logo_id = get_theme_mod( 'custom_logo' );
+                      $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                      if ( has_custom_logo() ) {
+                              echo '<h1 id="fh5co-logo">
+                                        <a href="home">
+                                                <img height="50" src="'. esc_url( $logo[0] ) .'" />
+                                        </a>
+                                     </h1>';
+                      } else {
+                              echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
+                      }
+                      ?>
+
+                      <!--  DESNI MENI -->
+                      <?php wp_nav_menu( array( 'theme_location' => 'user-menu',
+                      'menu_class' => 'pull-right right-menu' ) ); ?>
+
+            </nav>
+        </div>
+    </section>
+    <!-- #fh5co-header -->
