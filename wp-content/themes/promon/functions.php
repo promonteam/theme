@@ -37,3 +37,59 @@ function themename_custom_logo_setup() {
     add_theme_support( 'custom-logo', $defaults );
 }
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
+
+//WIDGETS LOCATION
+function wpb_init_widgets($id){
+  register_sidebar(array(
+    'name' => 'Box1',
+    'id' => 'box1',
+    'before_widget' => '<div class="fh5co-feature">',
+    'after_widget' => '</div>',
+    'before_title'=> '<h3>',
+    'after_title' => '</h3>',
+  ));
+
+  register_sidebar(array(
+    'name' => 'Box2',
+    'id' => 'box2',
+    'before_widget' => '<div class="fh5co-feature">',
+    'after_widget' => '</div>',
+    'before_title'=> '<h3>',
+    'after_title' => '</h3>',
+  ));
+
+  register_sidebar(array(
+    'name' => 'Box3',
+    'id' => 'box3',
+    'before_widget' => '<div class="fh5co-feature">',
+    'after_widget' => '</div>',
+    'before_title'=> '<h3>',
+    'after_title' => '</h3>',
+  ));
+  register_sidebar(array(
+    'name' => 'Box4',
+    'id' => 'box4',
+    'before_widget' => '<div class="fh5co-feature">',
+    'after_widget' => '</div>',
+    'before_title'=> '<h3>',
+    'after_title' => '</h3>',
+  ));
+  register_sidebar(array(
+    'name' => 'Box5',
+    'id' => 'box5',
+    'before_widget' => '<div class="fh5co-feature">',
+    'after_widget' => '</div>',
+    'before_title'=> '<h3>',
+    'after_title' => '</h3>',
+  ));
+  register_sidebar(array(
+    'name' => 'Box6',
+    'id' => 'box6',
+    'before_widget' => '<div class="fh5co-feature">',
+    'after_widget' => '</div>',
+    'before_title'=> '<h3>',
+    'after_title' => '</h3>',
+  ));
+}
+
+add_action('widgets_init','wpb_init_widgets');
