@@ -8,8 +8,6 @@ function add_theme_scripts() {
     // wp_enqueue_style( 'style.css', get_template_directory_uri() . '/css/style.css', array(), '1.1', 'all');
 }
 
-add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
-
 // REGISTRING NAVIGATION MENU
 function register_my_menus() {
   register_nav_menus(
@@ -93,3 +91,5 @@ function wpb_init_widgets($id){
 }
 
 add_action('widgets_init','wpb_init_widgets');
+
+add_theme_support('post-thumbnails');

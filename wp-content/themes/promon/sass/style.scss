@@ -1,13 +1,13 @@
 $font-primary: 'Roboto', Arial, sans-serif;
 
 // Overrides
-$grid-gutter-width: 40px !default; 
+$grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
 $brand-primary: #8dc63f !default;
-$brand-secondary: #484c50 !default; 
-$brand-tertiary: #85919d !default; 
+$brand-secondary: #484c50 !default;
+$brand-tertiary: #85919d !default;
 
 
 
@@ -62,16 +62,16 @@ $form-group-margin-bottom:       30px !default;
           border-radius: $radius;
 }
 @mixin flex() {
-	display: -webkit-box;      
-  	display: -moz-box;         
-  	display: -ms-flexbox;      
-  	display: -webkit-flex;     
-  	display: flex;             
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
 }
 @mixin flexwrap() {
 	flex-wrap: wrap;
-	-webkit-flex-wrap: wrap; 
-	-moz-flex-wrap: wrap; 
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
 }
 
 @font-face {
@@ -86,7 +86,7 @@ $form-group-margin-bottom:       30px !default;
 }
 
 @mixin icomoon() {
-	
+
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -98,10 +98,10 @@ $form-group-margin-bottom:       30px !default;
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	
+
 }
 
-// Import 
+// Import
 @import 'bootstrap/mixins';
 @import 'bootstrap/variables';
 
@@ -110,7 +110,7 @@ $form-group-margin-bottom:       30px !default;
 
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -124,7 +124,7 @@ body {
 	line-height: 28px;
 	font-weight: 300;
 	color: $brand-tertiary;
-	
+
 	height: 100%;
 	position: relative;
 	&.fh5co-overflow {
@@ -304,7 +304,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
 	background: $brand-bg-color url(../images/white_wave.png) repeat;;
-	
+
 	// high resolution background.
 	@media
 	only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -312,7 +312,7 @@ body {
 	only screen and (     -o-min-device-pixel-ratio: 2/1),
 	only screen and (        min-device-pixel-ratio: 2),
 	only screen and (                min-resolution: 192dpi),
-	only screen and (                min-resolution: 2dppx) { 
+	only screen and (                min-resolution: 2dppx) {
 		background: $brand-bg-color url(../images/white_wave_@2X.png) repeat;
 	}
 }
@@ -339,9 +339,9 @@ body {
 				max-width: 960px;
 				max-width: 780px;
 			}
-		}	
+		}
 	}
-	
+
 }
 
 
@@ -619,7 +619,7 @@ body {
 		background: $brand-white;
 		overflow: hidden;
 		z-index: 9;
-		
+
 		margin-bottom: 30px;
 		-webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
 		-moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
@@ -628,7 +628,7 @@ body {
 		box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
 		@include border-radius(7px);
 		@include transition(.3s);
-		
+
 		img {
 			z-index: 8;
 			opacity: 1;
@@ -698,7 +698,7 @@ body {
 		font-weight:300;
 	}
 	.fh5co-feature {
-		text-align: center; 
+		text-align: center;
 		padding-left: 20px;
 		padding-right: 20px;
 		margin-bottom: 30px;
@@ -776,12 +776,12 @@ body {
 		width: 100%;
 		float: left;
 		> a {
-			margin-left: 15%;	
+			margin-left: 15%;
 			@media screen and (max-width: $screen-xs) {
 				margin-left: 0;
 			}
 		}
-		
+
 	}
 	.fh5co-feature-image {
 		@media screen and (max-width: $screen-md) {
@@ -929,8 +929,8 @@ body {
 			left: 15px;
 			font-size: 20px;
 			@media screen and (max-width: $screen-xs) {
-				position: absolute;	
-				top: 26px;	
+				position: absolute;
+				top: 26px;
 			}
 		}
 		input[type="email"] {
@@ -956,7 +956,7 @@ body {
 			font-weight: 300;
 			width: 160px;
 			@media screen and (max-width: $screen-xs) {
-				position: relative;		
+				position: relative;
 				width: 100%;
 				border-top-left-radius: 4px;
 				border-bottom-left-radius: 4px;
@@ -1008,9 +1008,9 @@ body {
 			   left: 50%;
 			   margin-left: -10px;
 			   border-top: 10px solid black;
-			   border-top-color: $brand-primary; 
+			   border-top-color: $brand-primary;
 			   border-left: 10px solid transparent;
-			   border-right: 10px solid transparent; 
+			   border-right: 10px solid transparent;
 			}
 			}
 		}
@@ -1191,7 +1191,7 @@ body {
 	@include transition(.5s);
 	.offcanvas-visible & {
 		@include fh5co-translate(-275px);
-	} 
+	}
 }
 
 #fh5co-offcanvas {
@@ -1219,21 +1219,21 @@ body {
 			a {
 				font-size: 18px;
 				color: rgba(255,255,255,.7);
-			}	
+			}
 			&.active {
 				a {
 					color: $brand-primary;
 				}
-			}	
+			}
 		}
 	}
-	
+
 }
 
 
 // Burger Menu
 .fh5co-nav-toggle {
- 
+
   cursor: pointer;
   text-decoration: none;
   &.active i {
@@ -1331,7 +1331,7 @@ body {
   		display: block;
   		top: 20px;
   	}
-  
+
 }
 
 // Magnific Popup
@@ -1392,33 +1392,33 @@ body {
 	padding-bottom: 4em;
 	@media screen and (max-width: $screen-sm ) {
 		padding-bottom: 2em;
-	}	
+	}
 }
 .row-top-padded-md {
 	padding-top: 4em;
 	@media screen and (max-width: $screen-sm ) {
 		padding-top: 2em;
-	}	
+	}
 }
 .row-bottom-padded-sm {
 	padding-bottom: 2em;
 	@media screen and (max-width: $screen-sm ) {
 		padding-bottom: 2em;
-	}	
+	}
 }
 .row-top-padded-sm {
 	padding-top: 2em;
 	@media screen and (max-width: $screen-sm ) {
 		padding-top: 2em;
-	}	
+	}
 }
 
 
-.no-js #loader { 
-	display: none;  
+.no-js #loader {
+	display: none;
 }
-.js #loader { 
-	display: block; position: absolute; left: 100px; top: 0; border: 10px solid red; 
+.js #loader {
+	display: block; position: absolute; left: 100px; top: 0; border: 10px solid red;
 }
 .fh5co-loader {
 	position: fixed;

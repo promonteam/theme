@@ -38,69 +38,31 @@ get_header(); ?>
                     <p class="fh5co-sub-lead animate-box">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
                 </div>
             </div>
+
             <div class="row">
+               <?php
+                $args = array(
+                  'post_type' => 'post'
+                );
+                $post_query = new WP_Query($args);
+                if($post_query->have_posts() ) {
+                  while($post_query->have_posts() ) {
+                    $post_query->the_post();
+                ?>
+                <div class="col-md-4 col-sm-12 col-xxs-12 animate-box">
 
-                <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-                    <a href="<?php echo get_template_directory_uri() ?>/images/img_1.jpg" class="fh5co-project-item image-popup">
-                        <img src="<?php echo get_template_directory_uri() ?>/images/img_1.jpg" alt="Image" class="img-responsive">
+                    <a href="<?php the_post_thumbnail_url('large');?>" class="fh5co-project-item image-popup">
+                        <img width="100%" src="<?php the_post_thumbnail_url('large'); ?>" alt="<?php the_title(); ?>"/>
                         <div class="fh5co-text">
-                            <h2>Beautiful Sunrise</h2>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+                          <h2><?php the_title(); ?></h2>
+                          <?php the_content(); ?>
                         </div>
                     </a>
                 </div>
-
-                <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-                    <a href="<?php echo get_template_directory_uri() ?>/images/img_2.jpg" class="fh5co-project-item image-popup">
-                        <img src="<?php echo get_template_directory_uri() ?>/images/img_2.jpg" alt="Image" class="img-responsive">
-                        <div class="fh5co-text">
-                            <h2>Cute Little Dog</h2>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-                    <a href="<?php echo get_template_directory_uri() ?>/images/img_3.jpg" class="fh5co-project-item image-popup">
-                        <img src="<?php echo get_template_directory_uri() ?>/images/img_3.jpg" alt="Image" class="img-responsive">
-                        <div class="fh5co-text">
-                            <h2>A Wooden Bridge</h2>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-                    <a href="<?php echo get_template_directory_uri() ?>/images/img_4.jpg" class="fh5co-project-item image-popup">
-                        <img src="<?php echo get_template_directory_uri() ?>/images/img_4.jpg" alt="Image" class="img-responsive">
-                        <div class="fh5co-text">
-                            <h2>Puppy & I in the Farm</h2>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-                    <a href="<?php echo get_template_directory_uri() ?>/images/img_5.jpg" class="fh5co-project-item image-popup">
-                        <img src="<?php echo get_template_directory_uri() ?>/images/img_5.jpg" alt="Image" class="img-responsive">
-                        <div class="fh5co-text">
-                            <h2>A Big Wave of the Blue Sea</h2>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-                    <a href="<?php echo get_template_directory_uri() ?>/images/img_6.jpg" class="fh5co-project-item image-popup">
-                        <img src="<?php echo get_template_directory_uri() ?>/images/img_6.jpg" alt="Image" class="img-responsive">
-                        <div class="fh5co-text">
-                            <h2>Foggy Pine Trees</h2>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-                        </div>
-                    </a>
-                </div>
-
-
+                <?php
+                      }
+                  }
+                ?>
             </div>
         </div>
     </section>
@@ -120,7 +82,6 @@ get_header(); ?>
                         <?php if(is_active_sidebar('box1')): ?>
                         <?php dynamic_sidebar('box1'); ?>
                         <?php endif; ?>
-
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12 animate-box">
                         <?php if(is_active_sidebar('box2')): ?>
