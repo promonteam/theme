@@ -77,7 +77,7 @@
                       $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
                       if ( has_custom_logo() ) {
                               echo '<h1 id="fh5co-logo">
-                                        <a href="home">
+                                        <a href="/">
                                                 <img height="50" src="'. esc_url( $logo[0] ) .'" />
                                         </a>
                                      </h1>';
@@ -93,4 +93,4 @@
             </nav>
         </div>
     </section>
-    <!-- #fh5co-header -->
+      <!-- #fh5co-header -->

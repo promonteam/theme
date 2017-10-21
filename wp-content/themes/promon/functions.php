@@ -39,8 +39,8 @@ add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 //WIDGETS LOCATION
 function wpb_init_widgets($id){
   register_sidebar(array(
-    'name' => 'Box1',
-    'id' => 'box1',
+    'name' => 'Services',
+    'id' => 'services',
     'before_widget' => '<div class="fh5co-feature">',
     'after_widget' => '</div>',
     'before_title'=> '<h3>',
@@ -92,4 +92,17 @@ function wpb_init_widgets($id){
 
 add_action('widgets_init','wpb_init_widgets');
 
+//Support for POST THUMBNAILS
 add_theme_support('post-thumbnails');
+
+//EASING SLIDER
+function showMessagesToAdmin(){
+  include_once(ABSPATH.'wp-admin/includes/plugin.php');
+  if(!is_plugin_active('easing-slider/easing-slider.php')){
+    echo '<div id="alert" class="error">';
+    echo '<p> This theme requires you to install <a href="https://hr.wordpress.org/plugins/easing-slider/"> Easing slider </a></p>';
+    echo '</div>';
+  }
+}
+
+add_action('admin_notices','showMessagesToAdmin');
